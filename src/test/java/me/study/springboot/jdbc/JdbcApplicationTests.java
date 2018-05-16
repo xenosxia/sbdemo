@@ -24,7 +24,7 @@ public class JdbcApplicationTests extends BaseTests{
 		// 插入5个用户
 		userSerivce.create("a", 1);
 		userSerivce.create("b", 2);
-		userSerivce.create("c", 3);
+		userSerivce.create("1c", 3);
 		userSerivce.create("d", 4);
 		userSerivce.create("e", 5);
 

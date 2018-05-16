@@ -1,10 +1,31 @@
 package me.study.springboot.domain;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1847017679023899425L;
 
 	private Long id;
 	private String name;
 	private Integer age;
+
+	public User() {
+	}
+
+	public User(Long id, String name, Integer age) {
+		this.id = id;
+		this.name = name;
+		this.age = age;
+	}
+
+	public User(String name, Integer age) {
+		this.name = name;
+		this.age = age;
+	}
 
 	public Long getId() {
 		return id;
